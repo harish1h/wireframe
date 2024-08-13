@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.layout {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+.basic {
+    background-color: #4CAF50; /* Green */
+}
+
+.two-column {
+    background-color: #2196F3; /* Blue */
+}
+
+.three-column {
+    background-color: #FF9800; /* Orange */
+}
+
+.large-grid {
+    background-color: #9C27B0; /* Purple */
+}
+
+.article-right {
+    background-color: #E91E63; /* Pink */
+}
+
+.promo-box {
+    background-color: #009688; /* Teal */
+}
+
+.photo-gallery {
+    background-color: #FF5722; /* Deep Orange */
+}
+
+.footer {
+    background-color: #607D8B; /* Blue Grey */
+}
+
+/* 2 Column Layout */
+.two-column .column {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2%;
+    background-color: rgba(255, 255, 255, 0.2); /* Light Background */
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.two-column .column:last-child {
+    margin-right: 0;
+}
+
+/* 3 Column Layout */
+.three-column .column {
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 1.5%;
+    background-color: rgba(255, 255, 255, 0.2); /* Light Background */
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.three-column .column:last-child {
+    margin-right: 0;
+}
+
+/* Large Grid Layout */
+.large-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.large-grid .grid-item {
+    background-color: rgba(255, 255, 255, 0.2); /* Light Background */
+    padding: 20px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+/* Article Right Layout */
+.article-right {
+    display: flex;
+}
+
+.article-right .content {
+    width: 70%;
+    margin-right: 5%;
+    background-color: rgba(255, 255, 255, 0.2); /* Light Background */
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.article-right .sidebar {
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.2); /* Light Background */
+    padding: 20px;
+    border-radius: 3px;
+}
+
+/* Promo Box Layout */
+.promo-box .promo {
+    background-color: rgba(255, 255, 255, 0.2); /* Light Background */
+    padding: 20px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+/* Photo Gallery Layout */
+.photo-gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.photo-gallery .gallery-item {
+    width: calc(25% - 10px);
+    background-color: rgba(255, 255, 255, 0.2); /* Light Background */
+    padding: 20px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+/* Footer Layout */
+.footer .footer-content {
+    background-color: rgba(255, 255, 255, 0.2); /* Light Background */
+    padding: 20px;
+    text-align: center;
+    border-radius: 3px;
+}
